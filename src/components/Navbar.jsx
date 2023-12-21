@@ -17,7 +17,7 @@ function Navbar() {
     <div>
       <nav className="flex flex-row justify-between items-center w-full bg-black relative lg:justify-around">
         <img src={logo} alt="" className="ml-7" />
-        <div className="mr-7 lg:hidden" onClick={handleToggle}>
+        <div className="mr-7 sm:hidden" onClick={handleToggle}>
           {show ? (
             <FaGripLines fill="white"></FaGripLines>
           ) : (
@@ -30,7 +30,7 @@ function Navbar() {
             show
               ? " opacity-0 translate-y-[-10px] transition-all duration-100"
               : "opacity-100 translate-y-0 transition-all duration-100"
-          } absolute bg-black/50 p-4 rounded-md top-[50px] right-[50px] lg:hidden   `}
+          } absolute bg-black/50 p-4 rounded-md top-[50px] right-[50px] sm:hidden   `}
         >
           <ul className="flex flex-col text-white items-center">
             <li>
@@ -48,7 +48,7 @@ function Navbar() {
           </ul>
         </div>
 
-        <div className="hidden lg:flex">
+        <div className="hidden sm:flex">
           <ul className="flex flex-row text-white/70 items-center font-medium text-[16px] leading-[1.2] gap-[70px]">
             <li>
               <NavLink to="/">Home</NavLink>
