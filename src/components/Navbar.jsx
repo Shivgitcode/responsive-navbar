@@ -52,8 +52,8 @@ function Navbar() {
           </ul>
         </div>
 
-        <div className="hidden sm:flex">
-          <ul className="flex flex-row text-white/70 items-center font-medium text-[16px] leading-[1.2] gap-[70px]">
+        <div className="hidden sm:flex flex-row justify-end mr-[30px] items-center flex-grow lg:mr-[40px]">
+          <ul className="flex flex-row text-white/70 items-center font-medium text-[16px] leading-[1.2] gap-[30px] lg:gap-[70px]">
             <li>
               <NavLink to="/">Home</NavLink>
             </li>
