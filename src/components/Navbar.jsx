@@ -15,7 +15,7 @@ function Navbar() {
 
   return (
     <div>
-      <nav className="flex flex-row justify-between items-center w-full bg-black relative lg:justify-around">
+      <nav className="flex flex-row justify-between items-center w-full bg-black fixed z-50 lg:justify-around">
         <img src={logo} alt="" className="ml-7" />
         <div className="mr-7 sm:hidden" onClick={handleToggle}>
           {show ? (
@@ -28,11 +28,15 @@ function Navbar() {
         <div
           className={`${
             show
-              ? " opacity-0 translate-y-[-10px] transition-all duration-100"
-              : "opacity-100 translate-y-0 transition-all duration-100"
-          } absolute bg-black/50 p-4 rounded-md top-[50px] right-[50px] sm:hidden   `}
+              ? " opacity-0 translate-y-[-10px] transition-all duration-300"
+              : "opacity-100 translate-y-0 transition-all duration-300"
+          } absolute bg-black p-4  top-[72.3px] right-[0px] w-screen h-screen sm:hidden   `}
         >
-          <ul className="flex flex-col text-white items-center">
+          <ul
+            className={`${
+              show ? "opacity-0 -translate-y-4" : "opacity-100 translate-y-0"
+            } flex flex-col text-white text-3xl items-start ml-10 gap-10 transition-all duration-400`}
+          >
             <li>
               <NavLink to="/">Home</NavLink>
             </li>

@@ -8,7 +8,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div>
+    <div className=" overflow-y-scroll">
       <Navbar></Navbar>
 
       <div className="flex justify-center items-center w-screen h-screen text-2xl font-medium font-sans">
